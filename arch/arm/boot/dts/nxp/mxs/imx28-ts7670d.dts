@@ -34,28 +34,28 @@
 			color = <LED_COLOR_ID_GREEN>;
 			function = LED_FUNCTION_INDICATOR;
 			gpios = <&gpio0 28 GPIO_ACTIVE_LOW>;
-			default-state = "heartbeat";
+			linux,default-trigger = "heartbeat";
 		};
 
 		status2 {
 			color = <LED_COLOR_ID_RED>;
 			function = LED_FUNCTION_INDICATOR;
 			gpios = <&gpio0 17 GPIO_ACTIVE_LOW>;
-			default-state = "mmc1";
+			linux,default-trigger = "mmc1";
 		};
 
 		activity {
 			color = <LED_COLOR_ID_YELLOW>;
 			function = LED_FUNCTION_INDICATOR;
 			gpios = <&gpio1 26 GPIO_ACTIVE_LOW>;
-			default-state = "mmc0";
+			linux,default-trigger = "mmc0";
 		};
 
 		status1 {
 			color = <LED_COLOR_ID_BLUE>;
 			function = LED_FUNCTION_INDICATOR;
 			gpios = <&gpio1 24 GPIO_ACTIVE_HIGH>;
-			default-state = "mmc2";
+			linux,default-trigger = "mmc2";
 		};
 	};
 
